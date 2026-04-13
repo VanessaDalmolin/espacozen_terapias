@@ -1,0 +1,23 @@
+# Configurações do Site ZenIA
+title: ZenIA - Espaço Zen Medicina Terapia
+email: contato@espacozen.com.br
+description: >-
+  Documentação interativa dos fluxos de atendimento e inteligência 
+  da recepção do Espaço Zen.
+baseurl: "" # Deixe vazio se for o domínio principal
+url: "" # Seu domínio futuro (ex: https://vanessadalmolin.github.io)
+
+# Configurações de Build
+theme: minima # Tema padrão leve e limpo
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Excluir arquivos da geração do site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - .github
+  - .git
+  - INDICADORES.md # Mantemos como documento interno por enquanto
