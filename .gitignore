@@ -5,3 +5,14 @@ _site/
 vendor/
 node_modules/
 .ruby-lsp/
+
+# MacOS
+.DS_Store
+
+# Senhas e chaves (Segurança)
+.env
+.env.*
+*.pem
+*.key
+secrets.*
+credentials.*
