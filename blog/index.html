@@ -1,0 +1,33 @@
+---
+layout: default
+title: Blog Espaço Zen
+---
+<div style="text-align: center; margin-bottom: 2rem; padding-top: 2rem;">
+  <h2>Blog Espaço Zen</h2>
+  <p>Reflexões, visões sistêmicas e muito acolhimento para o seu caminhar e da sua família.</p>
+</div>
+
+<!-- Blog Navigation -->
+<div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap;">
+  <a href="{{ '/blog/' | relative_url }}" class="btn-primary" style="padding: 8px 20px;">Todos</a>
+  <a href="{{ '/blog/categorias.html' | relative_url }}" class="btn-outline" style="padding: 8px 20px; color: var(--color-primary); border-color: var(--color-primary);">Categorias</a>
+  <a href="{{ '/blog/arquivo.html' | relative_url }}" class="btn-outline" style="padding: 8px 20px; color: var(--color-primary); border-color: var(--color-primary);">Arquivo</a>
+</div>
+
+<div class="cards-grid">
+  {% for post in site.posts %}
+  <div class="terapia-card">
+    <div style="font-size: 0.85rem; color: var(--color-text-light); margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center;">
+      <span><i class="ph ph-calendar-blank"></i> {{ post.date | date: "%d/%m/%Y" }}</span>
+      {% if post.categories.size > 0 %}
+        <span class="badge" style="margin: 0; padding: 4px 10px; font-size: 0.7rem;">{{ post.categories.first }}</span>
+      {% endif %}
+    </div>
+    <h3 style="margin-bottom: 1rem; font-size: 1.3rem; line-height: 1.4;"><a href="{{ post.url | relative_url }}" style="text-decoration: none; color: var(--color-primary);">{{ post.title }}</a></h3>
+    <p style="margin-bottom: 1.5rem; color: var(--color-text-dark); font-size: 0.95rem;">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+    <a href="{{ post.url | relative_url }}" style="color: var(--color-secondary); font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 5px;">Ler Artigo <i class="ph ph-arrow-right"></i></a>
+  </div>
+  {% else %}
+  <p style="text-align: center; width: 100%;">Nenhum artigo publicado ainda.</p>
+  {% endfor %}
+</div>

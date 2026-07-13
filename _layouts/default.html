@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'pt-BR' }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+  <header class="top-navbar" id="navbar">
+    <div class="navbar-logo">
+      <a href="{{ '/' | relative_url }}" style="display: flex; align-items: center; gap: 8px;">
+        <img src="{{ '/assets/images/logo_zen_verde.png' | relative_url }}" alt="Logo Espaço Zen" style="height: 35px; width: auto;">
+        <span>Espaço Zen</span>
+      </a>
+    </div>
+    
+    <div class="menu-toggle" onclick="toggleMobileMenu()">
+      <i class="ph ph-list" id="menu-icon"></i>
+    </div>
+
+    <nav class="navbar-links" id="nav-links">
+      <a href="{{ '/' | relative_url }}" class="nav-item">Início</a>
+      
+      <div class="nav-item has-submenu" onclick="toggleSubmenu('terapias')">
+        Práticas e Terapias <i class="ph ph-caret-down" id="terapias-icon" style="font-size: 1rem;"></i>
+        <div class="submenu" id="terapias-menu">
+          <a href="{{ '/terapias/yoga.html' | relative_url }}">Yoga</a>
+          <a href="{{ '/terapias/mix-massagem.html' | relative_url }}">Mix de Massagem</a>
+          <a href="{{ '/terapias/reiki.html' | relative_url }}">Reiki</a>
+          <a href="{{ '/terapias/limpeza-ervas.html' | relative_url }}">Limpeza de Ervas</a>
+          <a href="{{ '/terapias/renascimento.html' | relative_url }}">Renascimento</a>
+          <a href="{{ '/terapias/acupuntura-ventosa.html' | relative_url }}">Acupuntura e Ventosa</a>
+          <a href="{{ '/terapias/cone-hindu.html' | relative_url }}">Cone Hindu</a>
+        </div>
+      </div>
+
+      <div class="nav-item has-submenu" onclick="toggleSubmenu('constelacao')">
+        Constelação Sistêmica <i class="ph ph-caret-down" id="constelacao-icon" style="font-size: 1rem;"></i>
+        <div class="submenu" id="constelacao-menu">
+          <a href="{{ '/constelacao.html' | relative_url }}" style="font-weight: 700; color: var(--color-primary);">O que é Constelação?</a>
+          <div style="height: 1px; background-color: rgba(0,0,0,0.05); margin: 5px 1.5rem;"></div>
+          <a href="{{ '/pais-e-filhos.html' | relative_url }}">Pais e Filhos</a>
+          <a href="{{ '/casal-relacionamento-afetivo.html' | relative_url }}">Casal | Relacionamento Afetivo</a>
+          <a href="{{ '/constelacao-empresarial.html' | relative_url }}">Carreira e Ascensão Profissional</a>
+          <a href="{{ '/exercicios-sistemicos.html' | relative_url }}">Exercícios Sistêmicos</a>
+        </div>
+      </div>
+
+      <a href="{{ '/agenda.html' | relative_url }}" class="nav-item">Agenda de Eventos</a>
+      <a href="{{ '/blog/' | relative_url }}" class="nav-item">Blog</a>
+      <a href="https://wa.me/{{ site.phone }}?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20a%20Vanessa%20sobre%20as%20terapias." target="_blank" class="btn-primary" style="margin-left: 1rem;">Agendar Atendimento</a>
+    </nav>
+  </header>
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer id="contato" style="background-color: var(--color-bg-sand); color: var(--color-text-dark); padding: 4rem 5% 2rem; margin-top: 4rem;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 2rem; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 2rem; margin-bottom: 2rem;">
+      
+      <!-- Esquerda: Logo -->
+      <div style="flex: 1; min-width: 200px;">
+        <h3 style="color: var(--color-primary); font-family: var(--font-heading); font-size: 1.5rem; margin: 0; display: flex; align-items: center; gap: 8px;">
+          <img src="{{ '/assets/images/logo_zen_verde.png' | relative_url }}" alt="Logo Espaço Zen" style="height: 35px; width: auto;">
+          Espaço Zen
+        </h3>
+      </div>
+
+      <!-- Centro: Links -->
+      <div style="flex: 1; min-width: 250px; text-align: center;">
+        <a href="{{ '/' | relative_url }}" style="color: var(--color-text-dark); text-decoration: none; margin: 0 15px; font-weight: 500;">Início</a>
+        <a href="{{ '/agenda.html' | relative_url }}" style="color: var(--color-text-dark); text-decoration: none; margin: 0 15px; font-weight: 500;">Agenda</a>
+        <a href="{{ '/blog/' | relative_url }}" style="color: var(--color-text-dark); text-decoration: none; margin: 0 15px; font-weight: 500;">Blog</a>
+      </div>
+
+      <!-- Direita: Redes e Endereço -->
+      <div style="flex: 1; min-width: 200px; text-align: right;">
+        <div style="display: flex; justify-content: flex-end; gap: 15px; margin-bottom: 0.5rem;">
+          <a href="#" style="color: var(--color-primary); font-size: 1.5rem;"><i class="ph ph-instagram-logo"></i></a>
+          <a href="https://wa.me/{{ site.phone }}?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20a%20Vanessa%20sobre%20as%20terapias." target="_blank" style="color: var(--color-primary); font-size: 1.5rem;"><i class="ph ph-whatsapp-logo"></i></a>
+        </div>
+        <p style="font-size: 0.9rem; margin: 0;">Sede Espaço Zen</p>
+      </div>
+
+    </div>
+
+    <div style="text-align: center;">
+      <p style="font-size: 0.85rem; color: var(--color-text-light); margin: 0;">Feito com energia e presença</p>
+    </div>
+  </footer>
+
+  <!-- Global Modal Popup -->
+  <div class="modal-overlay" id="globalModal" onclick="closeModal(event)">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal(event)"><i class="ph ph-x"></i></button>
+      <h3 class="modal-title" id="modalTitle">Título</h3>
+      <p class="modal-text" id="modalText">Texto base</p>
+      <a href="https://wa.me/{{ site.phone }}?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20a%20Vanessa%20sobre%20as%20terapias." target="_blank" class="modal-cta">
+        Ficou com dúvidas? Nos chame no WhatsApp <i class="ph ph-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // Modal Logic
+    const modalData = {
+      'Individual': { title: 'Constelação Individual', text: 'Um olhar profundo e exclusivo para as suas questões pessoais. Em um ambiente seguro e acolhedor, utilizamos bonecos ou âncoras para revelar dinâmicas ocultas e encontrar caminhos de solução para os seus desafios.' },
+      'Grupo': { title: 'Constelação em Grupo', text: 'A força do campo coletivo a serviço da sua cura. Participe como cliente ou representante e experimente o movimento de reconciliação que acontece quando olhamos juntos para o que precisa ser visto.' },
+      'Online': { title: 'Constelação Online', text: 'O cuidado que atravessa fronteiras. Receba o suporte da constelação no conforto do seu lar, com a mesma profundidade e eficácia do atendimento presencial, através de plataformas seguras de videoconferência.' },
+      'Presencial': { title: 'Constelação Presencial', text: 'Sinta a energia e a presença física em nosso espaço. Uma experiência imersiva e sensorial no Espaço Zen, preparada para que você possa se entregar totalmente ao seu processo de transformação.' },
+      'Infantil': { title: 'Constelação Infantil', text: 'Ajudando os pequenos a crescerem com leveza. Através de uma abordagem lúdica e sistêmica, olhamos para as dificuldades escolares, comportamentais ou emocionais das crianças, envolvendo o sistema familiar.' },
+      'Casal': { title: 'Constelação de Casal', text: 'Fortalecendo o vínculo e a ordem no relacionamento. Um espaço para olhar para o que atua na dinâmica do casal, liberando emaranhamentos e permitindo que o amor flua com equilíbrio entre o dar e o receber.' },
+      'Consultoria': { title: 'Consultoria Sistêmica', text: 'A visão sistêmica aplicada ao sucesso profissional e organizacional. Identifique bloqueios em projetos, empresas ou na carreira, trazendo clareza para tomadas de decisão e crescimento sustentável.' },
+      'Exercicios': { title: 'Exercícios Sistêmicos', text: 'Práticas breves e poderosas para o dia a dia. Pequenos movimentos e meditações que ajudam você a se manter no seu lugar de força, integrado e em paz com a sua história.' }
+    };
+
+    function openModal(id) {
+      if(event) event.preventDefault();
+      const data = modalData[id];
+      if(data) {
+        document.getElementById('modalTitle').innerText = data.title;
+        document.getElementById('modalText').innerText = data.text;
+        document.getElementById('globalModal').classList.add('active');
+      }
+    }
+
+    function closeModal(e) {
+      if(e) e.preventDefault();
+      document.getElementById('globalModal').classList.remove('active');
+    }
+
+    // Scroll Navbar
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('opaque');
+      } else {
+        navbar.classList.remove('opaque');
+      }
+    });
+
+    // Mobile Menu
+    function toggleMobileMenu() {
+      const links = document.getElementById('nav-links');
+      const icon = document.getElementById('menu-icon');
+      links.classList.toggle('active');
+      if(links.classList.contains('active')) {
+        icon.classList.remove('ph-list');
+        icon.classList.add('ph-x');
+      } else {
+        icon.classList.remove('ph-x');
+        icon.classList.add('ph-list');
+      }
+    }
+
+    // Dropdown Toggles
+    function toggleSubmenu(menuId) {
+      const menu = document.getElementById(menuId + '-menu');
+      const icon = document.getElementById(menuId + '-icon');
+      
+      // close others
+      document.querySelectorAll('.submenu').forEach(m => {
+        if(m.id !== menuId + '-menu') {
+          m.classList.remove('open');
+          const otherIcon = document.getElementById(m.id.replace('-menu', '-icon'));
+          if(otherIcon) {
+            otherIcon.classList.remove('ph-caret-up');
+            otherIcon.classList.add('ph-caret-down');
+          }
+        }
+      });
+
+      if (menu.classList.contains('open')) {
+        menu.classList.remove('open');
+        icon.classList.remove('ph-caret-up');
+        icon.classList.add('ph-caret-down');
+      } else {
+        menu.classList.add('open');
+        icon.classList.remove('ph-caret-down');
+        icon.classList.add('ph-caret-up');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+---
+layout: default
+title: Categorias | Blog Espaço Zen
+---
+<div style="text-align: center; margin-bottom: 2rem; padding-top: 2rem;">
+  <h2>Categorias</h2>
+  <p>Navegue pelos nossos artigos por áreas de interesse.</p>
+</div>
+
+<!-- Blog Navigation -->
+<div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap;">
+  <a href="{{ '/blog/' | relative_url }}" class="btn-outline" style="padding: 8px 20px; color: var(--color-primary); border-color: var(--color-primary);">Todos</a>
+  <a href="{{ '/blog/categorias.html' | relative_url }}" class="btn-primary" style="padding: 8px 20px;">Categorias</a>
+  <a href="{{ '/blog/arquivo.html' | relative_url }}" class="btn-outline" style="padding: 8px 20px; color: var(--color-primary); border-color: var(--color-primary);">Arquivo</a>
+</div>
+
+<div class="categories-list">
+  {% for category in site.categories %}
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    
+    <div class="terapia-card" style="margin-bottom: 2rem; padding: 2rem;">
+    <h3 style="border-bottom: 1px solid var(--color-bg-sand); padding-bottom: 1rem; margin-bottom: 1.5rem;">
+      <i class="ph ph-folder-open" style="vertical-align: middle; margin-right: 8px;"></i>
+      <span style="vertical-align: middle;">{{ category_name | capitalize }}</span> 
+      <span class="badge" style="float: right; margin: 0; font-size: 0.8rem; background-color: var(--color-bg-light); color: var(--color-primary);">{{ site.categories[category_name].size }} artigo(s)</span>
+    </h3>
+    
+    <ul style="list-style: none; margin: 0; padding: 0;">
+      {% for post in site.categories[category_name] %}
+        <li style="margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px dash rgba(0,0,0,0.05);">
+          <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: var(--color-text-dark); font-weight: 500; display: block; margin-bottom: 4px;">{{ post.title }}</a>
+          <span style="font-size: 0.8rem; color: var(--color-text-light);">Publicado em {{ post.date | date: "%d/%m/%Y" }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% else %}
+    <p style="text-align: center; width: 100%;">Nenhuma categoria encontrada.</p>
+  {% endfor %}
+</div>

@@ -1,0 +1,65 @@
+---
+layout: default
+---
+<!-- Lógica de tempo de leitura da postagem -->
+{% assign words = content | number_of_words %}
+{% assign read_time = words | divided_by: 180 %}
+{% if read_time == 0 %}
+  {% assign read_time = 1 %}
+{% endif %}
+
+<article class="post-container" style="max-width: 800px; margin: 0 auto; padding-top: 2rem;">
+  <div class="post-header" style="text-align: center; margin-bottom: 3rem;">
+    <!-- Categorias como Pílulas Visuais -->
+    {% if page.categories.size > 0 %}
+      <div style="margin-bottom: 1rem; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+        {% for category in page.categories %}
+          <a href="{{ '/blog/categorias.html' | relative_url }}" class="badge" style="background-color: var(--color-bg-sand); color: var(--color-secondary); padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; text-decoration: none; font-weight: 600; border: 1px solid var(--color-secondary);">{{ category }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <h1 style="font-size: 2.8rem; color: var(--color-primary); font-family: var(--font-heading); margin-bottom: 1rem; line-height: 1.2;">{{ page.title }}</h1>
+    
+    <div style="display: flex; align-items: center; justify-content: center; gap: 15px; color: var(--color-text-light); font-size: 0.95rem;">
+      <span><i class="ph ph-calendar-blank"></i> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d/%m/%Y" }}</time></span>
+      <span>•</span>
+      <span><i class="ph ph-clock"></i> {{ read_time }} min de leitura</span>
+      {% if page.author %}
+        <span>•</span>
+        <span><i class="ph ph-user"></i> {{ page.author }}</span>
+      {% endif %}
+    </div>
+  </div>
+  
+  <div class="post-content" style="font-size: 1.15rem; line-height: 1.8; color: var(--color-text-dark);">
+    {{ content }}
+  </div>
+
+  <!-- Widget de Artigos Relacionados -->
+  <div style="margin-top: 5rem; padding-top: 3rem; border-top: 1px solid var(--color-bg-sand);">
+    <h3 style="font-size: 1.5rem; color: var(--color-primary); margin-bottom: 1.5rem;">Continue Lendo...</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+      {% for related_post in site.related_posts limit:3 %}
+        <a href="{{ related_post.url | relative_url }}" style="text-decoration: none; display: block; border-radius: 12px; background: var(--color-bg-light); border: 1px solid rgba(0,0,0,0.05); overflow: hidden; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+          <div style="height: 120px; background: var(--color-primary-light); display: flex; align-items: center; justify-content: center; color: white;">
+            <i class="ph ph-flower-lotus" style="font-size: 2rem;"></i>
+          </div>
+          <div style="padding: 1rem;">
+            <h4 style="font-size: 1rem; color: var(--color-text-dark); margin: 0; line-height: 1.4;">{{ related_post.title }}</h4>
+            <span style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 5px; display: block;">Ler Artigo</span>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="post-footer">
+    <div class="card-highlight" style="margin-top: 4rem; background: var(--color-bg-sand); padding: 3rem; border-radius: 12px; text-align: center;">
+      <h3 style="color: var(--color-secondary); margin-bottom: 1rem;">Gostou desse conteúdo? Pode ser a hora de dar um primeiro passo.</h3>
+      <p style="color: var(--color-text-dark); margin-bottom: 2rem;">Entre em contato com o Espaço Zen para uma avaliação integrativa ou conheça os benefícios sistêmicos de perto.</p>
+      <a href="https://wa.me/{{ site.phone }}?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20a%20Vanessa%20sobre%20as%20terapias." target="_blank" class="btn-primary">Fale conosco no WhatsApp</a>
+      <a href="{{ '/constelacao.html' | relative_url }}" class="btn-outline" style="border-color: var(--color-primary); color: var(--color-primary); margin-left:10px; display:inline-block; margin-top: 10px;">Conhecer as Terapias</a>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,182 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Portfólio Capa (Hero Verde) -->
+<header class="hero" style="background: var(--color-bg-light); min-height: 100vh; display: flex; flex-direction: column; padding: 0;">
+  
+  <div style="display: grid; grid-template-columns: 1fr 1fr; flex: 1; min-height: 100vh;">
+    <!-- Esquerda Verde -->
+    <div style="background-color: var(--color-primary); position: relative; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 4rem 2rem 3rem; overflow: hidden;">
+
+      <div style="text-align: center; margin-top: 2rem; width: 100%;">
+        <h1 style="color: white; font-family: var(--font-heading); font-size: 4.5rem; font-weight: 300; letter-spacing: 4px; font-style: normal; line-height: 1.1; margin-bottom: 3rem;">ESPAÇO<br>ZEN</h1>
+        <p style="color: white; font-size: 1.1rem; font-weight: 300; letter-spacing: 3px; line-height: 2; max-width: 300px; margin: 0 auto; text-transform: uppercase;">
+          Conecte-se com<br>aquilo que<br>realmente<br>importa: VOCÊ
+        </p>
+      </div>
+
+      <div style="margin-top: 5rem; text-align: center; max-width: 450px;">
+        <h3 style="color: white; font-size: 1.15rem; font-family: var(--font-heading); margin-bottom: 1.5rem; font-weight: 400; letter-spacing: 1px;">Sua saúde de forma integral e consciente.</h3>
+        <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.05rem; line-height: 1.6; font-style: italic; margin-bottom: 0;">No Espaço Zen,<br>unimos ciência e terapias integrativas para equilibrar corpo, mente e emoções.<br>Comece sua jornada de bem-estar hoje.</p>
+      </div>
+    </div>
+
+    <!-- Direita Imagem -->
+    <div style="background: url('{{ "/assets/images/hero_luz.png" | relative_url }}') center/cover; position: relative;"></div>
+  </div>
+</header>
+
+<!-- Seção Reflexiva (Permita-se) -->
+<section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); min-height: 80vh; overflow: hidden; background-color: var(--color-bg-sand);">
+
+  <!-- Coluna 1: Imagem de Fundo (Areia/Pedra Livre) -->
+  <div style="background: url('{{ "/assets/images/areia_zen_pedra.png" | relative_url }}') center/cover; position: relative; min-height: 60vh;">
+  </div>
+
+  <!-- Coluna 2: Texto Sólido e Pirâmide -->
+  <div style="background-color: var(--color-bg-sand); padding: 6rem 4rem; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    
+    <div style="max-width: 500px; text-align: center; margin-bottom: 4rem;">
+      <p style="font-size: 1.15rem; color: var(--color-secondary); line-height: 1.8; font-family: var(--font-heading); margin-bottom: 0;">
+        Cada técnica integrativa atua de forma única, respeitando o momento e as necessidades de cada pessoa.<br>O olhar integral das terapias considera o ser humano em sua totalidade — corpo, mente, emoções e energia — promovendo equilíbrio e bem-estar de dentro para fora.<br>Não existe um caminho único ou um método universal; cada experiência é individual e intransferível.<br>Permita-se dar o primeiro passo rumo à sua essência e descubra a potência que existe em você.
+      </p>
+    </div>
+
+    <!-- Triangle Block (Moved precisely below the text) -->
+    <div style="display: flex; justify-content: center; position: relative;">
+      <div style="width: 200px; height: 200px; position: relative;">
+        <!-- Triangle fill (slightly darker brown) -->
+        <svg viewBox="0 0 100 100" style="width: 100%; height: 100%; fill: rgba(165, 115, 85, 0.6); stroke: transparent;">
+          <polygon points="50,15 10,90 90,90" />
+        </svg>
+        <span style="background: rgba(165, 115, 85, 0.15); padding: 2px 10px; border-radius: 4px; position: absolute; top: -5px; left: 50%; transform: translateX(-50%); font-weight: 600; color: var(--color-secondary); font-size: 0.8rem; letter-spacing: 1px;">MENTE</span>
+        <span style="background: rgba(165, 115, 85, 0.15); padding: 2px 10px; border-radius: 4px; position: absolute; bottom: -10px; left: -25px; font-weight: 600; color: var(--color-secondary); font-size: 0.8rem; letter-spacing: 1px;">ENERGIA</span>
+        <span style="background: rgba(165, 115, 85, 0.15); padding: 2px 10px; border-radius: 4px; position: absolute; bottom: -10px; right: -25px; font-weight: 600; color: var(--color-secondary); font-size: 0.8rem; letter-spacing: 1px;">EMOÇÕES</span>
+        <span style="font-weight: 700; color: var(--color-secondary); font-size: 0.9rem; letter-spacing: 1px; position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">CORPO</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- Nosso Propósito -->
+<section style="background-color: var(--color-white); padding: 8rem 5%; text-align: center;">
+  <div style="max-width: 800px; margin: 0 auto;">
+    <h2 style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: 2rem;">Onde a cura encontra o propósito</h2>
+    <p style="font-size: 1.2rem; color: var(--color-text-dark); line-height: 1.8; margin-bottom: 2.5rem;">
+      No Espaço Zen, nossa missão é despertar a potência de cura que já existe em você. Há 17 anos, cultivamos um ambiente onde o autocuidado não é apenas um serviço, mas uma vivência compartilhada.
+    </p>
+
+    <div style="text-align: left; background: var(--color-bg-sand); padding: 3.5rem; border-radius: 12px; margin-bottom: 4rem;">
+      
+      <div style="margin-bottom: 2.5rem;">
+        <strong style="color: var(--color-primary); font-size: 1.25rem; display: block; margin-bottom: 0.5rem;"><i class="ph ph-sparkle"></i> Evolução Consciente</strong>
+        <span style="color: var(--color-text-dark); font-size: 1.05rem; line-height: 1.6; display: block;">Não buscamos apenas a cura de sintomas, mas o despertar da sua melhor versão através do autoconhecimento.</span>
+      </div>
+      
+      <div style="margin-bottom: 2.5rem;">
+        <strong style="color: var(--color-primary); font-size: 1.25rem; display: block; margin-bottom: 0.5rem;"><i class="ph ph-circle"></i> Pertencimento e Ordem</strong>
+        <span style="color: var(--color-text-dark); font-size: 1.05rem; line-height: 1.6; display: block;">Honramos sua história e seu sistema, ajudando você a encontrar seu lugar de força na vida.</span>
+      </div>
+      
+      <div>
+        <strong style="color: var(--color-primary); font-size: 1.25rem; display: block; margin-bottom: 0.5rem;"><i class="ph ph-plant"></i> Assistência com Presença</strong>
+        <span style="color: var(--color-text-dark); font-size: 1.05rem; line-height: 1.6; display: block;">Acreditamos no cuidado que acolhe. Aqui, você é visto em sua totalidade — corpo, mente e alma.</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Bloco de Fechamento (Mosaic Manifesto) -->
+  <style>
+    .mosaico-manifesto {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+    }
+    @media (max-width: 768px) {
+      .mosaico-manifesto {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <div style="width: 100%; padding: 5px;">
+    <!-- Grid 2x3 estritamente forçado em desktop -->
+    <div class="mosaico-manifesto">
+      
+      <!-- Linha 1 -->
+      <div style="aspect-ratio: 1; background: url('{{ "/assets/images/voce_veio.png" | relative_url }}') center/cover; border-radius: 8px;"></div>
+      
+      <div style="aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background-color: var(--color-bg-sand); padding: 3rem; text-align: center; border-radius: 8px;">
+        <p style="color: var(--color-text-dark); font-family: var(--font-heading); font-size: 1.8rem; line-height: 1.6; letter-spacing: 0.5px; font-style: italic;">Você veio para esse mundo para ser você.</p>
+      </div>
+
+      <!-- Linha 2 -->
+      <div style="aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background-color: var(--color-bg-sand); padding: 3rem; text-align: center; border-radius: 8px;">
+        <p style="color: var(--color-text-dark); font-family: var(--font-heading); font-size: 1.8rem; line-height: 1.6; letter-spacing: 0.5px; font-style: italic;">Portanto, encontre sua essência, sua força, seu equilíbrio.</p>
+      </div>
+      
+      <div style="aspect-ratio: 1; background: url('{{ "/assets/images/lobo_uivando.png" | relative_url }}') center/cover; border-radius: 8px;"></div>
+
+      <!-- Linha 3 -->
+      <div style="aspect-ratio: 1; background: url('{{ "/assets/images/pedras_equilibrio.png" | relative_url }}') center/cover; border-radius: 8px;"></div>
+      
+      <div style="aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background-color: var(--color-bg-sand); padding: 3rem; text-align: center; border-radius: 8px;">
+        <p style="color: var(--color-text-dark); font-family: var(--font-heading); font-size: 1.8rem; line-height: 1.6; letter-spacing: 0.5px; font-style: italic;">E depois, não se distraia!</p>
+      </div>
+      
+    </div>
+  </div>
+
+  <div style="max-width: 1000px; margin: 4rem auto; padding-bottom: 2rem; display: flex; flex-direction: column; align-items: center; gap: 2.5rem;">
+    <h2 style="font-size: 2rem; font-family: var(--font-heading); color: var(--color-text-dark); font-weight: 500; font-style: italic; letter-spacing: 1px; text-align: center; line-height: 1.4; margin: 0;">
+      Mais do que um Espaço um refúgio.<br>Vem ser Zen também!
+    </h2>
+    <a href="https://wa.me/{{ site.phone }}?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20a%20Vanessa%20sobre%20as%20terapias." target="_blank" class="btn-primary" style="background-color: var(--color-bg-sand); border: none; color: var(--color-text-dark); padding: 14px 40px; font-size: 1.1rem; border-radius: 30px; white-space: nowrap; transition: 0.3s; text-decoration: none; display: inline-block; font-weight: 500; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">Iniciar minha jornada</a>
+  </div>
+</section>
+
+<!-- Carrossel de Feedbacks -->
+
+        <!-- Depoimento 2 -->
+        <div style="scroll-snap-align: center; flex: 0 0 320px; background: var(--color-bg-light); padding: 2rem; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: left;">
+          <div style="display: flex; color: #ffb800; font-size: 1.2rem; margin-bottom: 1rem;">
+            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+          </div>
+          <p style="font-style: italic; color: var(--color-text-dark); margin-bottom: 1.5rem; font-size: 0.95rem;">"O Yoga aqui é diferente. Eles respeitam nosso momento. Chego tensa e saio flutuando pelas ruas!"</p>
+          <div style="display: flex; align-items: center; gap: 15px;">
+            <div style="width: 45px; height: 45px; border-radius: 50%; background: var(--color-secondary); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">J</div>
+            <div>
+              <h4 style="margin: 0; font-size: 1rem; color: var(--color-primary);">Joana F.</h4>
+              <span style="font-size: 0.8rem; color: var(--color-text-light);">Yoga Vinyasa</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div style="scroll-snap-align: center; flex: 0 0 320px; background: var(--color-bg-light); padding: 2rem; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: left;">
+          <div style="display: flex; color: #ffb800; font-size: 1.2rem; margin-bottom: 1rem;">
+            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+          </div>
+          <p style="font-style: italic; color: var(--color-text-dark); margin-bottom: 1.5rem; font-size: 0.95rem;">"Acupuntura e cone Hindu viraram rotina de autocuidado. Minha enxaqueca constante desapareceu."</p>
+          <div style="display: flex; align-items: center; gap: 15px;">
+            <div style="width: 45px; height: 45px; border-radius: 50%; background: #a67b5b; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">R</div>
+            <div>
+              <h4 style="margin: 0; font-size: 1rem; color: var(--color-primary);">Renato P.</h4>
+              <span style="font-size: 0.8rem; color: var(--color-text-light);">Acupuntura</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a href="{{ '/feedbacks.html' | relative_url }}" style="display: inline-block; margin-top: 1rem; color: var(--color-secondary); text-decoration: none; font-weight: 600;">Ver todos os casos <i class="ph ph-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
