@@ -8,18 +8,18 @@ tags: ["casal"]
 ---
 
 ### 1. Queixas principais trazidas pela constelada
-- Dificuldade e desgaste no relacionamento afetivo com o parceiro (Gregory).
+- Dificuldade e desgaste no relacionamento afetivo com o parceiro.
 - Sensação de desmotivação, cansaço emocional e sobrecarga relacional.
-- Conflitos relacionados à presença da filha do parceiro (Sofia) na dinâmica do casal.
+- Conflitos relacionados à presença da filha do parceiro na dinâmica do casal.
 - Sentimento de precisar ceder excessivamente, performar ou ser “útil” para ser amada.
 - Dificuldade de estabelecer limites claros, especialmente para preservar o próprio espaço e necessidades.
-- Incômodo com a interferência da ex-companheira do parceiro (Fabiana), ainda viva no campo relacional.
+- Incômodo com a interferência da ex-companheira do parceiro, ainda viva no campo relacional.
 - Impactos indiretos de um processo judicial envolvendo a paternidade, gerando tensão, medo e insegurança no parceiro, que reverberam na relação.
 
 ### 2. Análises do campo sistêmico
 
 #### 2.1. O relacionamento do casal como raiz do sistema
-O campo mostrou com clareza que a questão central não era Sofia, mas o vínculo do casal. As dificuldades com a criança e com a ex-companheira apareceram como ramificações, não como a raiz do conflito. O relacionamento surgiu sem base/enraizamento, simbolicamente “sem pés”, indicando:
+O campo mostrou com clareza que a questão central não era a criança, mas o vínculo do casal. As dificuldades com a criança e com a ex-companheira apareceram como ramificações, não como a raiz do conflito. O relacionamento surgiu sem base/enraizamento, simbolicamente “sem pés”, indicando:
 - Falta de sustentação emocional.
 - Ausência de acordos claros.
 - Fragilidade estrutural para lidar com desafios externos.
@@ -30,8 +30,8 @@ O representante da relação trouxe energia jovem, com vitalidade e potencial de
 - Revisão de acordos.
 - Construção consciente de maturidade emocional.
 
-#### 2.3. Campo do parceiro (Gregory)
-Gregory apareceu no campo em estado de alerta, “armado”, não por traumas amorosos passados, mas por uma postura de sobrevivência, marcada por:
+#### 2.3. Campo do parceiro
+O parceiro apareceu no campo em estado de alerta, “armado”, não por traumas amorosos passados, mas por uma postura de sobrevivência, marcada por:
 - Medo do processo judicial.
 - Medo de perder a filha.
 - Medo financeiro e de julgamento.
@@ -51,22 +51,22 @@ Evidenciaram-se padrões de:
 
 Reconheceu-se a influência de histórias relacionais anteriores moldando posicionamentos atuais.
 
-#### 2.5. A criança (Sofia) no lugar inadequado
-Sofia surgiu entre o casal, ocupando simbolicamente um lugar que não lhe pertence. Isso indicou:
+#### 2.5. A criança no lugar inadequado
+A criança surgiu entre o casal, ocupando simbolicamente um lugar que não lhe pertence. Isso indicou:
 - Confusão de fronteiras.
 - A criança funcionando como elo ou muro entre os adultos.
 
 O campo mostrou que:
-- Não há relação direta a ser resolvida entre Sofia e a constelada.
-- O ajuste principal é retirar Sofia do lugar de mediação do casal.
+- Não há relação direta a ser resolvida entre a criança e a constelada.
+- O ajuste principal é retirar a criança do lugar de mediação do casal.
 
-#### 2.6. A ex-companheira (Fabiana) ainda ativa no campo
-Fabiana apareceu:
+#### 2.6. A ex-companheira ainda ativa no campo
+A ex-companheira apareceu:
 - Do lado do parceiro.
 - Olhando para a relação atual, não para a filha.
 
 Leitura sistêmica:
-A ex-companheira ainda está excluída emocionalmente, o que gera compensações. Sofia passa a representar, inconscientemente, a presença da mãe na nova relação. Isso cria comparações, rivalidade implícita e a reedição do vínculo passado dentro do vínculo atual.
+A ex-companheira ainda está excluída emocionalmente, o que gera compensações. A criança passa a representar, inconscientemente, a presença da mãe na nova relação. Isso cria comparações, rivalidade implícita e a reedição do vínculo passado dentro do vínculo atual.
 
 #### 2.7. Relação saudável colocada à distância
 Quando solicitado um representante de relacionamento saudável e positivo, ele foi colocado longe e perto do representante do processo judicial em pai e mãe. Indicação clara de que, antes de acessar um vínculo saudável, o sistema precisa:
@@ -81,7 +81,7 @@ Quando solicitado um representante de relacionamento saudável e positivo, ele f
 #### 3.1. Reposicionamento dos lugares
 Separação simbólica entre a relação do casal, relação pai–filha e relação passada com a ex-companheira.
 Retirada da criança do lugar de mediação emocional do casal. Foi realizado um movimento claro de:
-- Reconhecimento do lugar de Sofia como filha.
+- Reconhecimento do lugar da criança como filha.
 - Diferenciação dos papéis: adulta x criança.
 - Retirada da disputa implícita por lugar.
 - Afirmação de que cada uma oferece o que a outra não pode.
@@ -102,7 +102,7 @@ Exercício de reconhecimento dos traumas anteriores como origem de mecanismos de
 
 #### 3.5. Inclusão simbólica da ex-companheira
 Reconhecimento de que a ex-companheira pertence ao sistema, especialmente como mãe.
-Redução da necessidade sistêmica de a criança representar essa exclusão. Na finalização, Fabiana foi:
+Redução da necessidade sistêmica de a criança representar essa exclusão. Na finalização, a ex-companheira foi:
 - Vista e reconhecida.
 - Incluída como a primeira parceira e mãe.
 - Retirada do lugar de rivalidade.
@@ -111,22 +111,22 @@ Redução da necessidade sistêmica de a criança representar essa exclusão. Na
 **Ajuste sistêmico:** A exclusão é dissolvida, cessando a necessidade de compensação através da criança.
 
 #### 3.6. Reconhecimento do sistema familiar ampliado
-Foi afirmado que Gregory e Fabiana, mesmo separados, sempre serão uma família enquanto pais. A constelada e Gregory formam um casal atual e também uma família. Sofia pertence a ambos os sistemas.
+Foi afirmado que o parceiro e a ex-companheira, mesmo separados, sempre serão uma família enquanto pais. A constelada e o parceiro formam um casal atual e também uma família. A criança pertence a ambos os sistemas.
 
 **Ajuste sistêmico:** Organização clara de sistemas distintos, coexistentes e respeitados.
 
-#### 3.7. Instalação de uma nova postura interna (“nova Lu”)
+#### 3.7. Instalação de uma nova postura interna
 A constelada acessa simbolicamente uma nova versão de si: mais segura, mais tranquila, consciente de seu valor, capaz de comunicação assertiva e não violenta, em equilíbrio entre empatia e autorrespeito.
 
 **Ajuste sistêmico:** Fortalecimento do Eu adulto, reduzindo a atuação de mecanismos de defesa.
 
 #### 3.8. Convite sistêmico ao parceiro
-Foi feito um convite simbólico para que Gregory se liberte dos medos, olhe para a paternidade com mais maturidade e ofereça segurança à filha através de limites. 
+Foi feito um convite simbólico para que o parceiro se liberte dos medos, olhe para a paternidade com mais maturidade e ofereça segurança à filha através de limites. 
 
 *Observação importante:* O campo reconhece que a mudança do outro não depende da constelada, mas o convite está feito, sem mais fusão ou sobrecarga.
 
 #### 3.9. Instalação da nova imagem de solução
-Ao final, foi colocado um representante para a nova relação do casal e a relação saudável entre a constelada e Sofia. A imagem final trouxe relação com base, ordem e hierarquia restabelecidas, troca equilibrada e clareza de papéis.
+Ao final, foi colocado um representante para a nova relação do casal e a relação saudável entre a constelada e a criança. A imagem final trouxe relação com base, ordem e hierarquia restabelecidas, troca equilibrada e clareza de papéis.
 
 > **Frase de selamento sistêmico:** “Assim será, assim já é.”
 
