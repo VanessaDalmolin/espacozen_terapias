@@ -4,9 +4,29 @@ title: Home
 ---
 
 <!-- Portfólio Capa (Hero Verde) -->
+<style>
+  .hero-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex: 1;
+    min-height: 100vh;
+  }
+  @media (max-width: 900px) {
+    .hero-split {
+      grid-template-columns: 1fr;
+    }
+    .hero-split > div:first-child {
+      padding-top: 7rem !important;
+      padding-bottom: 2rem !important;
+    }
+    .hero-split > div:last-child {
+      min-height: 400px;
+    }
+  }
+</style>
 <header class="hero" style="background: var(--color-bg-light); min-height: 100vh; display: flex; flex-direction: column; padding: 0;">
   
-  <div style="display: grid; grid-template-columns: 1fr 1fr; flex: 1; min-height: 100vh;">
+  <div class="hero-split">
     <!-- Esquerda Verde -->
     <div style="background-color: var(--color-primary); position: relative; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 4rem 2rem 3rem; overflow: hidden;">
 
