@@ -49,6 +49,6 @@ Após os ajustes sistêmicos, o alívio foi instantâneo. Ao soltar a necessidad
 
 Com a culpa dissipada, ela reuniu forças para fazer uma **transição profissional**. Desvencilhou-se da exaustão da indústria familiar de embutidos e passou a buscar um caminho profissional que respeitasse o seu bem-estar, a sua formação e o seu tempo de qualidade.
 
-A Constelação não apagou a dor do fim do casamento, mas trouxe o diagnóstico preciso de que a vida dela estava sequestrada por histórias que não eram suas.
+A Constelação não apagou a dor do fim do casamento, mas trouxe a clareza sistêmica de que a vida dela estava sequestrada por histórias que não eram suas.
 
 *E você? O quanto do seu esgotamento diário e da sua infelicidade profissional é realmente seu? Se a sua carreira está roubando as suas relações e a sua alegria, talvez seja a hora de olhar para as lealdades que você carrega. Agende a sua Constelação e liberte-se.*
