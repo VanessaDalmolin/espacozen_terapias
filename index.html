@@ -11,6 +11,9 @@ title: Home
     flex: 1;
     min-height: 100vh;
   }
+  .permita-se-text {
+    padding: 6rem 4rem !important;
+  }
   @media (max-width: 900px) {
     .hero-split {
       grid-template-columns: 1fr;
@@ -22,13 +25,16 @@ title: Home
     .hero-split > div:last-child {
       min-height: 400px;
     }
+    .permita-se-text {
+      padding: 3rem 1.5rem !important;
+    }
   }
 </style>
 <header class="hero" style="background: var(--color-bg-light); min-height: 100vh; display: flex; flex-direction: column; padding: 0;">
   
   <div class="hero-split">
     <!-- Esquerda Verde -->
-    <div style="background-color: var(--color-primary); position: relative; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 4rem 2rem 3rem; overflow: hidden;">
+    <div style="background-color: var(--color-primary); position: relative; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 8rem 2rem 3rem; overflow: hidden;">
 
       <div style="text-align: center; margin-top: 2rem; width: 100%;">
         <h1 style="color: white; font-family: var(--font-heading); font-size: 4.5rem; font-weight: 300; letter-spacing: 4px; font-style: normal; line-height: 1.1; margin-bottom: 3rem;">ESPAÇO<br>ZEN</h1>
@@ -56,7 +62,7 @@ title: Home
   </div>
 
   <!-- Coluna 2: Texto Sólido e Pirâmide -->
-  <div style="background-color: var(--color-bg-sand); padding: 6rem 4rem; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <div class="permita-se-text" style="background-color: var(--color-bg-sand); display: flex; flex-direction: column; align-items: center; justify-content: center;">
     
     <div style="max-width: 500px; text-align: center; margin-bottom: 4rem;">
       <p style="font-size: 1.15rem; color: var(--color-secondary); line-height: 1.8; font-family: var(--font-heading); margin-bottom: 0;">
@@ -94,17 +100,17 @@ title: Home
     <div style="text-align: left; background: var(--color-bg-sand); padding: 3.5rem; border-radius: 12px; margin-bottom: 4rem;">
       
       <div style="margin-bottom: 2.5rem;">
-        <strong style="color: var(--color-primary); font-size: 1.25rem; display: block; margin-bottom: 0.5rem;"><i class="ph ph-sparkle"></i> Evolução Consciente</strong>
+        <strong style="color: var(--color-primary); font-size: 1.25rem; display: flex; align-items: center; gap: 8px; margin-bottom: 0.5rem;"><i class="ph ph-sparkle"></i> Evolução Consciente</strong>
         <span style="color: var(--color-text-dark); font-size: 1.05rem; line-height: 1.6; display: block;">Não buscamos apenas a cura de sintomas, mas o despertar da sua melhor versão através do autoconhecimento.</span>
       </div>
       
       <div style="margin-bottom: 2.5rem;">
-        <strong style="color: var(--color-primary); font-size: 1.25rem; display: block; margin-bottom: 0.5rem;"><i class="ph ph-circle"></i> Pertencimento e Ordem</strong>
+        <strong style="color: var(--color-primary); font-size: 1.25rem; display: flex; align-items: center; gap: 8px; margin-bottom: 0.5rem;"><i class="ph ph-circle"></i> Pertencimento e Ordem</strong>
         <span style="color: var(--color-text-dark); font-size: 1.05rem; line-height: 1.6; display: block;">Honramos sua história e seu sistema, ajudando você a encontrar seu lugar de força na vida.</span>
       </div>
       
       <div>
-        <strong style="color: var(--color-primary); font-size: 1.25rem; display: block; margin-bottom: 0.5rem;"><i class="ph ph-plant"></i> Assistência com Presença</strong>
+        <strong style="color: var(--color-primary); font-size: 1.25rem; display: flex; align-items: center; gap: 8px; margin-bottom: 0.5rem;"><i class="ph ph-plant"></i> Assistência com Presença</strong>
         <span style="color: var(--color-text-dark); font-size: 1.05rem; line-height: 1.6; display: block;">Acreditamos no cuidado que acolhe. Aqui, você é visto em sua totalidade — corpo, mente e alma.</span>
       </div>
 
@@ -122,8 +128,15 @@ title: Home
     }
     @media (max-width: 768px) {
       .mosaico-manifesto {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
       }
+      .mosaico-manifesto > div:nth-child(1) { order: 1; }
+      .mosaico-manifesto > div:nth-child(2) { order: 2; }
+      .mosaico-manifesto > div:nth-child(3) { order: 4; }
+      .mosaico-manifesto > div:nth-child(4) { order: 3; }
+      .mosaico-manifesto > div:nth-child(5) { order: 5; }
+      .mosaico-manifesto > div:nth-child(6) { order: 6; }
     }
   </style>
   <div style="width: 100%; padding: 5px;">
